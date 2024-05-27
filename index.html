@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/countyStyle.css" />
+    <link rel="stylesheet" href="./css/hederStyle.css" />
+    <link rel="stylesheet" href="./css/modalStyle.css" />
+    <link rel="stylesheet" href="./css/styleFuter.css" />
+    <link rel="stylesheet" href="./css/homeStyle.css" />
+    <link rel="stylesheet" href="./css/lastStyle.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="header-vector" src="img/Vector.svg" alt="hamburger" />
+
+      <div class="header-logo">
+        <img class="header-logo-pin" src="img/map-pin.svg" alt="map-pin" />
+        <div class="header-logo-flex">
+          <img class="header-logo-img" src="img/image.svg" alt="planat" />
+        </div>
+        <p class="header-logo-text">See World</p>
+      </div>
+      <nav class="nav">
+        <a class="nav-href" href="#">Головна</a>
+        <button type="button" class="nav-button">
+          <img class="nav-img" src="img/heart.svg" alt="heart" />
+        </button>
+        <a href="#"><img class="nav-img" src="img/user.svg" alt="user" /></a>
+        <a class="nav-href" href="#">Всі оголошення</a>
+        <a class="nav-href" href="#">Особистий кабінет</a>
+      </nav>
+      <button class="header-button" type="button">Зареєстуватись</button>
+    </header>
+    <main>
+      <section class="here">
+        <div class="container">
+          <img class="here-pict" src="img/pict-small.png" alt="pict-small" />
+          <h1 class="here-title">Знайди своє місце</h1>
+          <p class="here-text">Подорожуй зі смаком</p>
+          <div class="here-wrap">
+            <button type="button" class="here-buttonFirst">
+              Знайти оголошення
+            </button>
+            <button type="button" class="here-button">Подати оголошення</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="house">
+        <div class="container">
+          <h2 class="house-title">Критерії оголошення</h2>
+          <ul class="house-list">
+            <li class="house-list-item">
+              <img
+                class="house-list-item-img"
+                src="./img/home.svg"
+                alt="house"
+              />
+              <h3 class="house-list-item-title">Будинки</h3>
+            </li>
+            <li class="house-list-item">
+              <img class="house-list-item-img" src="./img/s.svg" alt="Студії" />
+              <h3 class="house-list-item-title">Студії</h3>
+            </li>
+            <li class="house-list-item">
+              <img
+                class="house-list-item-img"
+                src="./img/flat.svg"
+                alt="Квартири"
+              />
+              <h3 class="house-list-item-title">Квартири</h3>
+            </li>
+            <li class="house-list-item">
+              <img
+                class="house-list-item-img"
+                src="./img/k.svg"
+                alt="Кімнати"
+              />
+              <h3 class="house-list-item-title">Кімнати</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="backgroundModal is-hidden">
+        <div class="modal">
+          <button class="modal-close" type="button">
+            <img class="modal-close-lineF" src="./img/Line-1.svg" alt="Line" />
+            <img class="modal-close-lineS" src="./img/Line-2.svg" alt="Line" />
+          </button>
+        </div>
+      </div>
+
+      <section class="country">
+        <div class="container">
+          <h2 class="country-title">Найпопулярніші країни для подорожей</h2>
+          <div class="country-wrap">
+            <h3 class="country-title">Франція</h3>
+            <a href="#" class="country-link">Відкрити всі оголошення</a>
+          </div>
+          <div class="country-ul-wrap">
+            <button class="button-left">
+              <img
+                class="left-img"
+                src="./img/arrow-left-circle.svg"
+                alt="left"
+              />
+            </button>
+            <ul class="country-list">
+              <li class="country-list-item" data-id="1">
+                <img
+                  class="country-list-item-img"
+                  src="./img/franch1.svg"
+                  alt="Nantes"
+                />
+                <h4 class="country-list-item-title">Nantes</h4>
+                <p class="country-list-item-text">10 753 готелів</p>
+              </li>
+              <li class="country-list-item" data-id="2">
+                <img
+                  class="country-list-item-img"
+                  src="./img/franch2.svg"
+                  alt="Montpellier"
+                />
+                <h4 class="country-list-item-title">Montpellier</h4>
+                <p class="country-list-item-text">11 386 готелів</p>
+              </li>
+              <li class="country-list-item" data-id="3">
+                <img
+                  class="country-list-item-img"
+                  src="./img/franch3.svg"
+                  alt="Paris"
+                />
+                <h4 class="country-list-item-title">Paris</h4>
+                <p class="country-list-item-text">12 278 готелів</p>
+              </li>
+            </ul>
+            <button class="button-right">
+              <img
+                class="right-img"
+                src="./img/arrow-right-circle.svg"
+                alt="right"
+              />
+            </button>
+          </div>
+          <div class="country-wrap">
+            <h3 class="country-title">Італія</h3>
+            <a href="#" class="country-link">Відкрити всі оголошення</a>
+          </div>
+          <div class="country-ul-wrap">
+            <button class="button-left">
+              <img
+                class="left-img"
+                src="./img/arrow-left-circle.svg"
+                alt="left"
+              />
+            </button>
+            <ul class="country-list">
+              <li class="country-list-item" data-id="4">
+                <img
+                  class="country-list-item-img"
+                  src="./img/itali1.svg"
+                  alt="Venezia"
+                />
+                <h4 class="country-list-item-title">Venezia</h4>
+                <p class="country-list-item-text">14 120 готелів</p>
+              </li>
+              <li class="country-list-item" data-id="5">
+                <img
+                  class="country-list-item-img"
+                  src="./img/itali2.svg"
+                  alt="Firenze"
+                />
+                <h4 class="country-list-item-title">Firenze</h4>
+                <p class="country-list-item-text">7 988 готелів</p>
+              </li>
+              <li class="country-list-item" data-id="6">
+                <img
+                  class="country-list-item-img"
+                  src="./img/Roma1.jpg"
+                  alt="Roma"
+                />
+                <h4 class="country-list-item-title">Roma</h4>
+                <p class="country-list-item-text">12 809 готелів</p>
+              </li>
+            </ul>
+            <button class="button-right">
+              <img
+                class="right-img"
+                src="./img/arrow-right-circle.svg"
+                alt="right"
+              />
+            </button>
+          </div>
+          <div class="country-wrap">
+            <h3 class="country-title">Іспанія</h3>
+            <a href="#" class="country-link">Відкрити всі оголошення</a>
+          </div>
+          <div class="country-ul-wrap">
+            <button class="button-left">
+              <img
+                class="left-img"
+                src="./img/arrow-left-circle.svg"
+                alt="left"
+              />
+            </button>
+            <ul class="country-list">
+              <li class="country-list-item" data-id="7">
+                <img
+                  class="country-list-item-img"
+                  src="./img/spain1.svg"
+                  alt="Selvia"
+                />
+                <h4 class="country-list-item-div-title">Selvia</h4>
+                <p class="country-list-item-div-text">8 984готелів</p>
+              </li>
+              <li class="country-list-item" data-id="8">
+                <img
+                  class="country-list-item-img"
+                  src="./img/spain2.svg"
+                  alt="Madrit"
+                />
+                <h4 class="country-list-item-div-title">Madrit</h4>
+                <p class="country-list-item-div-text">15 325 готелів</p>
+              </li>
+              <li class="country-list-item" data-id="9">
+                <img
+                  class="country-list-item-img"
+                  src="./img/spain3.svg"
+                  alt="Mallorca"
+                />
+                <h4 class="country-list-item-title">Mallorca</h4>
+                <p class="country-list-item-text">9 825 готелів</p>
+              </li>
+            </ul>
+            <button class="button-right">
+              <img
+                class="right-img"
+                src="./img/arrow-right-circle.svg"
+                alt="right"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="last">
+        <div class="container">
+          <div class="last-n">
+            <h2 class="last-title">Останні оголошення</h2>
+            <div class="last-wrap">
+              <a class="last-link">Відкрити всі оголошення</a>
+            </div>
+          </div>
+          <ul class="last-list">
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img1.webp"
+                alt="Vila Gale Lagos Hotel"
+              />
+              <h3 class="last-list-item-title">Vila Gale Lagos Hotel</h3>
+              <p class="last-list-item-text">Andresen, Portugal</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">7,1</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img2.webp"
+                alt="Cala Moresca "
+              />
+              <h3 class="last-list-item-title">Cala Moresca</h3>
+              <p class="last-list-item-text">Via Faro, Italy</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">8,6</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img3.webp"
+                alt="Horison Blu"
+              />
+              <h3 class="last-list-item-title">Horison Blu</h3>
+              <p class="last-list-item-text">Petrou Karakousi, Greece</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">5,9</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img4.webp"
+                alt="Le Galion Hotel"
+              />
+              <h3 class="last-list-item-title">Le Galion Hotel</h3>
+              <p class="last-list-item-text">Saint-Martin-de-Re, France</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">8,4</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img5.webp"
+                alt="Molitor Hotel"
+              />
+              <h3 class="last-list-item-title">Molitor Hotel</h3>
+              <p class="last-list-item-text">Paris, France</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">6,9</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img6.webp"
+                alt="Sierra de Meira"
+              />
+              <h3 class="last-list-item-title">Sierra de Meira</h3>
+              <p class="last-list-item-text">Madrid, Spain</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">7,4</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img7.webp"
+                alt="Petit Hotel"
+              />
+              <h3 class="last-list-item-title">Petit Hotel</h3>
+              <p class="last-list-item-text">Madrid, Spain</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">7,2</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img8.webp"
+                alt="Gran Hotel"
+              />
+              <h3 class="last-list-item-title">Gran Hotel</h3>
+              <p class="last-list-item-text">Alicante, Spain</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">8,9</p>
+              </div>
+            </li>
+            <li class="last-list-item">
+              <img
+                class="last-list-item-img"
+                src="./img/img9.webp"
+                alt="KViHotel"
+              />
+              <h3 class="last-list-item-title">KViHotel</h3>
+              <p class="last-list-item-text">Madrid, Spain</p>
+              <div class="last-list-item-wrap">
+                <img
+                  class="last-list-item-star"
+                  src="./img/Star 1.svg"
+                  alt="Star"
+                />
+                <p class="last-list-item-value">7,2</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_grid-wrapper">
+          <ul class="footer_list">
+            <li class="footer_list-item">Головна</li>
+            <li class="footer_list-item">Всі оголошення</li>
+            <li class="footer_list-item">Обране</li>
+            <li class="footer_list-item">Особистий кабінет</li>
+          </ul>
+          <div class="footer_logo">
+            <img
+              class="footer_logo-svg"
+              style="width: 41px; height: 45px"
+              src="./img/image.svg"
+              alt="logo svg"
+            />
+            <p class="footer_logo-text">See World</p>
+          </div>
+          <div class="footer_svg-list">
+            <img
+              style="width: 20px; height: 20px"
+              class="footer_svg-item"
+              src="./img/facebook.svg"
+              alt="svg-facebook"
+            />
+            <img
+              style="width: 20px; height: 20px"
+              class="footer_svg-item"
+              src="./img/twitter.svg"
+              alt="svg-twitter"
+            />
+            <img
+              style="width: 20px; height: 20px"
+              class="footer_svg-item"
+              src="./img/instagram.svg"
+              alt="svg-instagram"
+            />
+            <img
+              style="width: 20px; height: 20px"
+              class="footer_svg-item"
+              src="./img/youtube.svg"
+              alt="svg-youtube"
+            />
+          </div>
+          <p class="footer_info-text">©Всі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

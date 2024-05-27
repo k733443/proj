@@ -1,0 +1,133 @@
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.here {
+  background-image: url("./img/image1-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 20px 320px;
+}
+
+.here-title {
+  color: #f8f7f7;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.here-pict {
+  position: absolute;
+  top: 207px;
+  left: 152px;
+  width: 37px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.here-text {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #f8f7f7;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 106px;
+}
+
+.here-buttonFirst {
+  border: 1px solid #e96e25;
+  background: #e96e25;
+  padding: 16px 32px;
+  color: #f8f7f7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: "Josefin Slab", serif;
+  margin-bottom: 24px;
+}
+
+.here-button {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #e96e25;
+  font-family: "Josefin Slab", serif;
+  color: #e96e25;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  background: transparent;
+}
+.nav-img {
+  width: 24px;
+  height: 24px;
+}
+.nav {
+  display: none;
+}
+@media (min-width: 834px) {
+  .here {
+    padding: 100px 32px 320px;
+    background: url("./img/image1-1-1.svg") no-repeat;
+  }
+  .here-title{
+    width: 321px;
+  }
+  .here-pict {
+    width: 74px;
+    height: 90px;
+    left: 295px;
+    top: 250px;
+  }
+  .here-text {
+    font: 12px 32px;
+    margin-bottom: 110px;
+  }
+  .here-buttonFirst {
+    margin-bottom: 0%;
+    margin-right: 50px;
+  }
+  .here-wrap {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .header-vector {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .container{
+    width: 1280px;
+  }
+  .here {
+    background: url("./img/image1-1-2.svg") no-repeat;
+    background-size: cover;
+    padding: 160px 0 185px;
+  }
+  .here-title{
+    font-size: 96px;
+    width: 634px;
+  }
+  .here-text{
+    font-size: 32px;
+  }
+  .here-pict{
+    left: 411px;
+    top: 306px;
+  }
+}

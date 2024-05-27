@@ -1,0 +1,141 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: 0;
+}
+.button-left {
+  display: none;
+}
+.button-right {
+  display: none;
+}
+.country-title {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.country-list-item:last-child {
+  display: none;
+}
+.country {
+  width: 100%;
+  padding: 47px 7px ;
+}
+.container {
+  margin: 0 auto;
+}
+
+.country-list-item-img {
+  width: 375px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.country-list-item-text {
+  margin-bottom: 12px;
+}
+
+.country-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.country-link {
+  color: #266294;
+  text-align: center;
+  font-family: Play;
+  font-size: 20px;
+  line-height: 100%;
+  padding: 12px 0;
+  border-bottom: 2px solid #266294;
+}
+.country {
+  width: 100%;
+  background-color: #ebf8ff;
+}
+@media screen and (min-width: 834px) {
+  .country-ul-wrap {
+    position: relative;
+  }
+  .container{
+    width: 770px;
+  }
+  .country-list-item:last-child {
+    display: none;
+  }
+  .button-left {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    transform: translateY(-50%);
+  }
+  .button-right {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5%;
+  }
+  .country-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 29px;
+  }
+  .country-list-item-img{
+    width: 375px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button-left {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .country-list-item:last-child{
+    display: none;
+  }
+  .country-ul-wrap {
+    position: relative;
+  }
+  .button-right {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .country-title {
+    font-size: 40px;
+  }
+  .country-link {
+    font-weight: 700;
+  }
+}
+@media (min-width:1440px) {
+  .country-list-item:last-child{
+    display: block;
+  }
+  .container{
+    width: 1280px;
+  }
+  .button-right{
+    width: 80px;
+  }
+  .left-img{
+    width: 80px;
+  }
+  .button-left{
+    width: 80px;
+  }
+  .right-img{
+    width: 80px;
+  }
+}
