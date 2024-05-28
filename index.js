@@ -63,7 +63,9 @@ arrList[0].addEventListener("click", (event) => {
   const id = liEl.dataset.id;
   const dataCard = data.find((elem) => {
     console.log(elem);
-    modal.innerHTML = `
+    return elem.id === id;
+  });
+  modal.innerHTML = `
 <button class="modal-close" type="button">
 <img class="modal-close-lineF" src="./img/Line-1.svg" alt="Line" />
 <img class="modal-close-lineS" src="./img/Line-2.svg" alt="Line" />
@@ -71,8 +73,6 @@ arrList[0].addEventListener("click", (event) => {
 <img class ="country-list-item-img" src="${dataCard.src}" alt="${dataCard.title}"/>
 <h4 class="country-list-item-title">${dataCard.title}</h4>
 <p class="country-list-item-text">${dataCard.text}</p>`;
-    return elem.id === id;
-  });
 });
 
 arrList[1].addEventListener("click", (event) => {
@@ -83,9 +83,11 @@ arrList[1].addEventListener("click", (event) => {
   window.addEventListener("keydown", fnA);
   const liEl = event.target.closest(".country-list-item");
   const id = liEl.dataset.id;
-  const dataCard = data.find((elem) => {
+  const dataCard = dataSecond.find((elem) => {
     console.log(elem);
-    modal.innerHTML = `
+    return elem.id === id;
+  });
+modal.innerHTML = `
 <button class="modal-close" type="button">
 <img class="modal-close-lineF" src="./img/Line-1.svg" alt="Line" />
 <img class="modal-close-lineS" src="./img/Line-2.svg" alt="Line" />
@@ -93,8 +95,6 @@ arrList[1].addEventListener("click", (event) => {
 <img class ="country-list-item-img" src="${dataCard.src}" alt="${dataCard.title}"/>
 <h4 class="country-list-item-title">${dataCard.title}</h4>
 <p class="country-list-item-text">${dataCard.text}</p>`;
-    return elem.id === id;
-  });
 });
 
 arrList[2].addEventListener("click", (event) => {
@@ -105,9 +105,11 @@ arrList[2].addEventListener("click", (event) => {
   window.addEventListener("keydown", fnA);
   const liEl = event.target.closest(".country-list-item");
   const id = liEl.dataset.id;
-  const dataCard = data.find((elem) => {
+  const dataCard = dataFirst.find((elem) => {
     console.log(elem);
-    modal.innerHTML = `
+    return elem.id === id;
+  });
+modal.innerHTML = `
 <button class="modal-close" type="button">
 <img class="modal-close-lineF" src="./img/Line-1.svg" alt="Line" />
 <img class="modal-close-lineS" src="./img/Line-2.svg" alt="Line" />
@@ -115,8 +117,6 @@ arrList[2].addEventListener("click", (event) => {
 <img class ="country-list-item-img" src="${dataCard.src}" alt="${dataCard.title}"/>
 <h4 class="country-list-item-title">${dataCard.title}</h4>
 <p class="country-list-item-text">${dataCard.text}</p>`;
-    return elem.id === id;
-  });
 });
 window.addEventListener("keydown", fnA);
 window.removeEventListener("keydown", fnA);
